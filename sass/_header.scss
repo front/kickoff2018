@@ -1,0 +1,48 @@
+
+header.header {
+  position: relative;
+  margin-bottom: 40px;
+
+  background-image: url('/img/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100% / 30%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: hidden;
+
+  &> .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+  &> .wrapper {
+    z-index: 2;
+    padding: 100px 0 100px;
+    @include desktop () {
+      padding: 190px 0 215px;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+
+    width: 120px;
+    @include desktop () {
+      width: 180px;
+    }
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    @include desktop () {
+      font-size: 36px;
+    }
+  }
+}

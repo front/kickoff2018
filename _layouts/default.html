@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Kickoff 2018 - {{ page.title }}</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="wrapper">
+        <a href="/"><img src="/img/frontkom.svg"></a>
+        <h1>Welcome to Portugal - Algarve.</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h1>Schedule</h1>
+        <p class="light">Below you'll find the schedule for Frontkom Kickoff 2018. We'll keep this page regularly updated, so be sure to keep checking in!</p>
+
+        <nav class="menu">
+          <ul>
+            <li class="{% if page.day == 28 %}active{% endif %}">
+              <a href="/28">Friday, 28th <img src="/img/arrow-down.svg"></a>
+            </li>
+            <li class="{% if page.day == 29 %}active{% endif %}">
+              <a href="/29">Saturday, 29th <img src="/img/arrow-down.svg"></a>
+            </li>
+            <li class="{% if page.day == 30 %}active{% endif %}">
+              <a href="/30">Sunday, 30th <img src="/img/arrow-down.svg"></a>
+            </li>
+            <li class="{% if page.day == 0 %}active{% endif %}">
+              <a href="/readme">Read me <img src="/img/arrow-down.svg"></a>
+            </li>
+          </ul>
+        </nav>
+
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>

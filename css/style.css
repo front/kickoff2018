@@ -1,0 +1,266 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h2, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+}
+p.light {
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header.header {
+  position: relative;
+  margin-bottom: 40px;
+  background-image: url("/img/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100% / 30%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: hidden;
+}
+header.header > .overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header.header > .wrapper {
+  z-index: 2;
+  padding: 100px 0 100px;
+}
+@media (min-width: 768px) {
+  header.header > .wrapper {
+    padding: 190px 0 215px;
+  }
+}
+header.header img {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 120px;
+}
+@media (min-width: 768px) {
+  header.header img {
+    width: 180px;
+  }
+}
+header.header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  header.header h1 {
+    font-size: 36px;
+  }
+}
+
+.menu {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .menu {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+.menu ul {
+  position: relative;
+}
+.menu li {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .menu li:nth-child(1):after, .menu li:nth-child(2):after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 28px;
+    margin: 0 15px;
+    background-color: #E5E5E5;
+    vertical-align: middle;
+  }
+  .menu li:last-child {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .menu li {
+    margin-right: 10px;
+  }
+}
+.menu a {
+  display: inline-block;
+  padding: 10px 0;
+  color: #E17000;
+  font-size: 16px;
+}
+.menu a img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .menu a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .menu li.active {
+    position: absolute;
+    left: 0;
+    top: 47px;
+  }
+}
+.menu li.active a {
+  background-color: #E17000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+.menu li.active a img {
+  display: inline-block;
+  vertical-align: -4px;
+  margin-left: 5px;
+}
+.menu li.active:before {
+  display: none;
+}
+
+.schedule {
+  margin-bottom: 50px;
+}
+.schedule li {
+  display: block;
+  position: relative;
+  padding: 25px 0 25px 60px;
+  border-top: 2px solid #E5E5E5;
+}
+@media (min-width: 768px) {
+  .schedule li {
+    padding: 40px 0 40px 85px;
+  }
+}
+.schedule li:last-child {
+  border-bottom: 2px solid #E5E5E5;
+}
+.schedule p img {
+  display: inline-block;
+  vertical-align: -1px;
+  margin-right: 5px;
+}
+.schedule p + p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.schedule small {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+}
+.schedule time {
+  position: absolute;
+  left: 0px;
+}
+.schedule span {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 16px;
+}
+.schedule span img {
+  display: block;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .schedule span img {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 50px);
+    margin-top: -8px;
+  }
+}
+
+.readme > div {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .readme > div {
+    margin-bottom: 40px;
+  }
+}
+.readme p {
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .readme .half {
+    width: 50%;
+    float: left;
+  }
+  .readme .clear {
+    clear: left;
+  }
+}
