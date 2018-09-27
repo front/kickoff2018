@@ -66,6 +66,10 @@ li {
   list-style: none;
 }
 
+a {
+  color: #0074D9;
+}
+
 header.header {
   position: relative;
   margin-bottom: 40px;

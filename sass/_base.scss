@@ -1,6 +1,7 @@
 // Variables
 $color-orange: #E17000;
 $color-gray: #E5E5E5;
+$color-blue: #0074D9;
 
 @mixin desktop {
   @media (min-width: 768px) {
@@ -74,4 +75,8 @@ ul {
 }
 li {
   list-style: none;
+}
+
+a {
+  color: $color-blue;
 }
